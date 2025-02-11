@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="images-2.jpeg" alt="User Profile">
+            <h2>Saurabh Kumar</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="#profile" onclick="navigateTo(event, 'profile-section')">Profile</a></li>
+            <li><a href="#work" onclick="navigateTo(event, 'work-section')">Work Assignments</a></li>
+            <li><a href="#notes" onclick="navigateTo(event, 'notes-section')">Notes</a></li>
+            <li><a href="#calendar" onclick="navigateTo(event, 'calendar-section')">Calendar</a></li>
+            <li><a href="#progress" onclick="navigateTo(event, 'progress-section')">Progress Tracker</a></li>
+            <li><a href="#notifications" onclick="navigateTo(event, 'notifications-section')">Notifications</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Personal Dashboard</h1>
+            <button id="logout-button">Logout</button>
+        </header>
+        <section id="profile-section" class="active">
+            <h2>Profile</h2>
+            <p>View and update your profile information.</p>
+             <!-- Bio Section -->
+    <div id="profile-bio" class="section">
+        <h3>Bio</h3>
+        <p>Update your personal information like name, contact, and address.</p>
+    </div>
+
+    <!-- Account Details Section -->
+    <div id="profile-account-details" class="section">
+        <h3>Account Details</h3>
+        <p>Manage your account settings, change password, and update login credentials.</p>
+    </div>
+
+    <!-- Academic Progress Section -->
+    <div id="profile-academic-progress" class="section">
+        <h3>Academic Progress</h3>
+        <p>Track your academic achievements, grades, and completed courses.</p>
+    </div>
+
+    <!-- Leave Application Section -->
+    <div id="profile-leave-application" class="section">
+        <h3>Leave Application</h3>
+        <p>Submit and view the status of your leave applications.</p>
+    </div>
+        </section>
+        <section id="work-section">
+            <h2>Work Assignments</h2>
+            <p>View and manage your tasks assigned by the head.</p>
+        </section>
+        <section id="notes-section">
+            <h2>Notes</h2>
+            <p>Create and manage personal notes.</p>
+        </section>
+        <section id="calendar-section">
+            <h2>Calendar</h2>
+            <p>Track events, deadlines, and schedules.</p>
+        </section>
+        <section id="progress-section">
+            <h2>Progress Tracker</h2>
+            <p>View your progress on ongoing tasks.</p>
+        </section>
+        <section id="notifications-section">
+            <h2>Notifications</h2>
+            <p>Check recent updates and alerts.</p>
+        </section>
+    </div>
+
+    <script>
+        function navigateTo(event, sectionId) {
+            event.preventDefault();
+            document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
