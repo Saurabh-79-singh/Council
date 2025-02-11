@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#b27c7c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: rgb(143, 69, 69);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+.container h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.container p {
+    color: rgb(0, 0, 0);;
+    margin-bottom: 20px;
+}
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.container button {
+    width: 100%;
+    padding: 10px;
+    background: #b27c7c;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.container button:hover {
+    background: rgb(143, 69, 69);
+}
+.container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #1e90ff;
+    text-decoration: none;
+}
+.container a:hover {
+    text-decoration: underline;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.tabs button.active {
+    background:#b27c7c;
+    color: #fff;
+    border: none;
+}
